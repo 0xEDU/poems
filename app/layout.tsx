@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Esteban } from "next/font/google";
 import "./globals.css";
+import Footer from './footer'
 
 const esteban = Esteban({ weight: "400", subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={esteban.className}>{children}</body>
+      <Footer />
     </html>
   );
 }
